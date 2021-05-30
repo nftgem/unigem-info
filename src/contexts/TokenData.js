@@ -588,7 +588,7 @@ const getTokenChartData = async (tokenAddress) => {
   const utcEndTime = dayjs.utc()
   let utcStartTime = utcEndTime.subtract(1, 'year')
   let startTime = utcStartTime.startOf('minute').unix() - 1
-
+  console.log('getTokenChartData for token address:', tokenAddress)
   try {
     let allFound = false
     let skip = 0
